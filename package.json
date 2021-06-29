@@ -1,0 +1,19 @@
+{
+  "name": "@better/cloud_e2e_suites",
+  "version": "0.0.1",
+  "description": "TestCafe framework template for Better Cloud",
+  "scripts": {
+    "test:chrome": "testcafe chrome tests/ui/desktop/boardMembers.test.js --env prod "
+  },
+  "author": "Santhosh",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sku154/better-cloud-e2e-testcafe"
+  },
+  "dependencies": {
+    "csv-writer": "^1.6.0",
+    "minimist": "^1.2.5",
+    "testcafe": "^1.14.2"
+  }
+}

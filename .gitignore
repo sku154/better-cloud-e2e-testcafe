@@ -1,1 +1,3 @@
 node_modules
+testcafe-reporter-cucumber-json.json
+cucumber-json-reports

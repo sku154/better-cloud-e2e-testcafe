@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "TestCafe framework template for Better Cloud",
   "scripts": {
-    "test:chrome": "testcafe chrome tests/ui/desktop/boardMembers.test.js --env prod "
+    "test:chrome": "testcafe chrome tests/ui/desktop/boardMembers.test.js --env prod --reporter cucumber-json",
+    "report": "node report-generator.js"
+
   },
   "author": "Santhosh",
   "license": "UNLICENSED",
@@ -14,6 +16,8 @@
   "dependencies": {
     "csv-writer": "^1.6.0",
     "minimist": "^1.2.5",
-    "testcafe": "^1.14.2"
+    "multiple-cucumber-html-reporter": "^1.18.0",
+    "testcafe": "^1.14.2",
+    "testcafe-reporter-cucumber-json": "^6.2.1"
   }
 }

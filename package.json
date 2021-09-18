@@ -5,7 +5,6 @@
   "scripts": {
     "test:chrome": "testcafe chrome tests/ui/desktop/boardMembers.test.js --env prod --reporter cucumber-json",
     "report": "node report-generator.js"
-
   },
   "author": "Santhosh",
   "license": "UNLICENSED",
@@ -17,7 +16,8 @@
     "csv-writer": "^1.6.0",
     "minimist": "^1.2.5",
     "multiple-cucumber-html-reporter": "^1.18.0",
-    "testcafe": "^1.14.2",
-    "testcafe-reporter-cucumber-json": "^6.2.1"
+    "testcafe": "^1.16.0",
+    "testcafe-reporter-cucumber-json": "^6.2.1",
+    "yarn": "^1.22.11"
   }
 }

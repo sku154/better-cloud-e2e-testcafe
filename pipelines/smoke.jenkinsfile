@@ -18,7 +18,7 @@ pipeline {
             steps {
                 script {
                     // Define the command to run TestCafe
-                    def scriptCommand = 'yarn testcafe chrome --headless tests/ui/desktop/boardMembers.test.js -e --env prod --reporter cucumber-json'
+                    def scriptCommand = 'yarn testcafe chrome:headless tests/ui/desktop/boardMembers.test.js -e --env prod --reporter cucumber-json'
                     // Execute the command
                     sh(scriptCommand)
                 }

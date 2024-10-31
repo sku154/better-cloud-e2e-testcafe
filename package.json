@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "TestCafe framework template for Better Cloud",
   "scripts": {
-    "test:chrome": "testcafe chrome tests/ui/desktop/boardMembers.test.js --env prod --reporter cucumber-json",
+    "test:chrome": "testcafe chrome:headless tests/ui/desktop/boardMembers.test.js --env prod --reporter cucumber-json",
     "report": "node report-generator.js"
   },
   "author": "Santhosh",

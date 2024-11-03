@@ -1,0 +1,28 @@
+pipeline {
+    agent any
+    stages {
+        stage('Clean') {
+            steps {
+                checkout scm
+            }
+        }
+         stage('Install Dependencies') {
+            steps {
+                script {
+                    // Install dependencies using Yarn
+                    sh 'yarn install'
+                }
+            }
+        }
+        stage('Run tests') {
+            steps {
+                script {
+                    // Define the command to run TestCafe
+                    def scriptCommand = 'yarn testcafe chrome:headless tests/ui/desktop/boardMembers.test.js -e --env prod --reporter cucumber-json'
+                    // Execute the command
+                    sh(scriptCommand)
+                }
+            }
+        }
+    }
+}

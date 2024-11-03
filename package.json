@@ -3,16 +3,17 @@
   "version": "0.0.1",
   "description": "TestCafe framework template for Better Cloud",
   "scripts": {
-    "test:chrome": "testcafe chrome tests/ui/desktop/boardMembers.test.js --env prod --reporter cucumber-json",
+    "test:chrome": "testcafe chrome tests/ui/desktop/*.js --env prod --reporter cucumber-json",
     "report": "node report-generator.js"
   },
   "author": "Santhosh",
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sku154/better-cloud-e2e-testcafe"
+    "url": "https://github.com/sku154/testcafe-e2e"
   },
   "dependencies": {
+    "chance": "^1.1.12",
     "csv-writer": "^1.6.0",
     "minimist": "^1.2.5",
     "multiple-cucumber-html-reporter": "^1.18.0",

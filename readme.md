@@ -1,6 +1,6 @@
-# better cloud E2E TESTCAFE AUTOMATION
+# TESTCAFE E2E AUTOMATION
 
-This project is designed to run the better-cloud end-to-end tests.
+This project is designed to run the Testcafe e2e Automation.
 
 ## Install required dependencies for the project
 
